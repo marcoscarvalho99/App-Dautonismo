@@ -52,6 +52,7 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
+
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -71,7 +72,7 @@ class MainActivity : AppCompatActivity() {
                     }
 
                 }
-
+                binding.invalidateAll()
             }
             RESULT_CANCELED ->{
 
